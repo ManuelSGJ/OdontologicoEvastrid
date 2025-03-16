@@ -75,6 +75,12 @@ $pacientes = consultaTablaCondicion('pacientes', " WHERE estado = 'activo' ");
                                 </button>
                             </a>
 
+                            <a href="generateHCO.php?cedulaPaciente=<?php echo $paciente['numero_documento']; ?>" target="_blank">
+                                <button title="Generar Historia Clinica Odontologica">
+                                    <i class="fa-solid fa-file-pdf"></i>
+                                </button>
+                            </a>
+
                             <a href="" class="btnEliminarPaciente" value=<?php echo $paciente['numero_documento']; ?>>
                                 <button title="Eliminar Paciente">
                                     <i class="fa-solid fa-trash"></i>
